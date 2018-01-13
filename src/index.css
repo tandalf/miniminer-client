@@ -13,6 +13,10 @@ body {
   background-color: #86c2cc;
 }
 
+.navbar i.fa {
+  margin-right: 8px;
+}
+
 .nav-profile-img {
   width: 25px;
   height: 25px;

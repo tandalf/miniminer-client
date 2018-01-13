@@ -42,7 +42,7 @@ class AppNavbar extends React.Component {
         case 'DASHBOARD':
           return (
             <NavItem key={index}>
-              <NavLink href="/dashboard/">Dashboard</NavLink>
+              <NavLink href="/dashboard/"><i class="fa fa-line-chart" aria-hidden="true"></i>Dashboard</NavLink>
             </NavItem>
           );
         case 'ACCOUNT':
