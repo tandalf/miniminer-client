@@ -27,6 +27,14 @@ class AppNavbar extends React.Component {
     });
   }
 
+  getProfileImage(){
+    if(this.props.signedIn){
+      return (
+        <img src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" className="rounded-circle nav-profile-img" />
+      );
+    }
+  }
+
   getMenuItems() {
     return this.props.includedNavs.map( (navDescription, index) => {
       const props = this.props;
@@ -41,6 +49,7 @@ class AppNavbar extends React.Component {
           return (
             <UncontrolledDropdown nav inNavbar key={index}>
               <DropdownToggle nav caret>
+                { this.getProfileImage() }
                 Account
               </DropdownToggle>
               <DropdownMenu >
