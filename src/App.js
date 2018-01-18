@@ -4,13 +4,9 @@ import AppNavbar from './components/Navbar';
 
 class App extends Component {
   render() {
-    const includedNavs = [
-      {name: 'DASHBOARD'},
-      {name: 'ACCOUNT'}
-    ];
     return (
       <div>
-        <AppNavbar includedNavs={includedNavs} signedIn={true}/>
+        <AppNavbar />
       </div>
     );
   }
