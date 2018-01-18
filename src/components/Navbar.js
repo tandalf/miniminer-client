@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {
   Collapse,
   Navbar,
@@ -12,7 +13,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-class AppNavbar extends React.Component {
+class MainNavbar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -28,15 +29,15 @@ class AppNavbar extends React.Component {
   }
 
   getProfileImage(){
-    if(this.props.signedIn){
+    if(this.props.user.signedIn){
       return (
-        <img src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" className="rounded-circle nav-profile-img" />
+        <img src={this.props.user.avartar} className="rounded-circle nav-profile-img" />
       );
     }
   }
 
   getMenuItems() {
-    return this.props.includedNavs.map( (navDescription, index) => {
+    return this.props.navItems.map( (navDescription, index) => {
       const props = this.props;
       switch(navDescription.name){
         case 'DASHBOARD':
@@ -112,4 +113,12 @@ class AppNavbar extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    navItems: state.navItems,
+    user: state.user
+  };
+};
+
+const AppNavbar = connect(mapStateToProps)(MainNavbar);
 export default AppNavbar;
