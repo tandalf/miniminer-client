@@ -1,6 +1,6 @@
 
 export const navItems = (state = [], action) => {
-  switch (action.filter) {
+  switch (action.type) {
     case 'SET_NAV_ITEMS':
       return action.items;
     default:
