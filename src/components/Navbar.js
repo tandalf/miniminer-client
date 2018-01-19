@@ -57,7 +57,7 @@ class MainNavbar extends React.Component {
               </DropdownToggle>
               <DropdownMenu >
                 { function() {
-                  if(props.signedIn){
+                  if(props.user.signedIn){
                     return (
                       <DropdownItem>
                         Sign Out
@@ -74,7 +74,7 @@ class MainNavbar extends React.Component {
                 }()}
                 <DropdownItem divider />
                   { function() {
-                    if(props.signedIn){
+                    if(props.user.signedIn){
                       return (
                         <DropdownItem>
                           Edit Account
