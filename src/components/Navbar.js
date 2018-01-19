@@ -41,11 +41,9 @@ class MainNavbar extends React.Component {
       const props = this.props;
       switch(navDescription.name){
         case 'DASHBOARD':
-          const className = "fa fa-line-chart" + (navDescription.isActive ? ' active' : '');
-
           return (
-            <NavItem key={index}>
-              <NavLink href="/dashboard/"><i className={className} aria-hidden="true"></i>Dashboard</NavLink>
+            <NavItem key={index} active={navDescription.isActive}>
+              <NavLink href="/dashboard/"><i className="fa fa-line-chart" aria-hidden="true"></i>Dashboard</NavLink>
             </NavItem>
           );
         case 'ACCOUNT':
