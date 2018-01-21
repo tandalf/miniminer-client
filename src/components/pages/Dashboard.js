@@ -2,8 +2,8 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as actionCreators from '../actions/actionCreators';
-import { setNavItems } from '../actions/actionCreators';
+import * as actionCreators from '../../actions/actionCreators';
+import { setNavItems } from '../../actions/actionCreators';
 
 class MainDashboardPage extends React.Component {
   constructor(props){
