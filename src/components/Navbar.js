@@ -13,6 +13,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
+import { AppProfileImage } from './nav/navitems';
+
 class MainNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -50,7 +52,7 @@ class MainNavbar extends React.Component {
           return (
             <UncontrolledDropdown nav inNavbar key={index}>
               <DropdownToggle nav caret>
-                { this.getProfileImage() }
+                <AppProfileImage />
                 Account
               </DropdownToggle>
               <DropdownMenu >
