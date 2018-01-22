@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../../actions/actionCreators';
 
 class MainDashboardPage extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   componentDidMount(){
     const navItems = [
       {name: 'DASHBOARD', isActive: true},

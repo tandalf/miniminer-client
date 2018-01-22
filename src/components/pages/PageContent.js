@@ -5,10 +5,6 @@ import HomePage from './Home';
 import DashboardPage from './Dashboard';
 
 class PageMainContent extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
   render(){
     return (
       <div>
