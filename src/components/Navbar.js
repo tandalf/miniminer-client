@@ -5,13 +5,10 @@ import {
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  Nav,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  Nav } from 'reactstrap';
 
-import { AppProfileImage, DashboardMenuItem } from './nav/navitems';
+import { DashboardMenuItem,
+  AccountMenuItem } from './nav/navitems';
 
 class MainNavbar extends React.Component {
   constructor(props) {
@@ -43,49 +40,7 @@ class MainNavbar extends React.Component {
         case 'DASHBOARD':
           return <DashboardMenuItem key={index} {...navDescription} />
         case 'ACCOUNT':
-          return (
-            <UncontrolledDropdown nav inNavbar key={index}>
-              <DropdownToggle nav caret>
-                <AppProfileImage />
-                Account
-              </DropdownToggle>
-              <DropdownMenu >
-                { function() {
-                  if(props.user.signedIn){
-                    return (
-                      <DropdownItem>
-                        Sign Out
-                      </DropdownItem>
-                    );
-                  }
-                  else {
-                    return (
-                      <DropdownItem>
-                        Sign In
-                      </DropdownItem>
-                    );
-                  }
-                }()}
-                <DropdownItem divider />
-                  { function() {
-                    if(props.user.signedIn){
-                      return (
-                        <DropdownItem>
-                          Edit Account
-                        </DropdownItem>
-                      );
-                    }
-                    else{
-                      return (
-                        <DropdownItem>
-                          Register Account
-                        </DropdownItem>
-                      );
-                    }
-                  }()}
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          );
+          return <AccountMenuItem key={index} user={props.user} {...navDescription} />
         default:
           console.log('Unknown nav item name ' + navDescription.name);
           return <span style={{margin: 0, padding: 0}} key={index}></span>
