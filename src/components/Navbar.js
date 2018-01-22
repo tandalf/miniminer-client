@@ -25,14 +25,6 @@ class MainNavbar extends React.Component {
     });
   }
 
-  getProfileImage(){
-    if(this.props.user.signedIn){
-      return (
-        <img src={this.props.user.avartar} className="rounded-circle nav-profile-img" />
-      );
-    }
-  }
-
   getMenuItems() {
     return this.props.navItems.map( (navDescription, index) => {
       const props = this.props;

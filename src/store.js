@@ -10,6 +10,7 @@ const defaultState = {
     {name: 'ACCOUNT'}
   ],
   user: {
+    first_name: 'User',
     signedIn: true,
     avartar: "//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120"
   }

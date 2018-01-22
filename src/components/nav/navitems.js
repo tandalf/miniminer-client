@@ -12,7 +12,7 @@ import {
 const MainProfileImage = (props) => {
   if(props.user.signedIn){
     return (
-      <img src={props.user.avartar} className="rounded-circle nav-profile-img" />
+      <img src={props.user.avartar} alt="" className="rounded-circle nav-profile-img" />
     );
   }
   else {
