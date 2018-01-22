@@ -6,14 +6,12 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 
-import { AppProfileImage } from './nav/navitems';
+import { AppProfileImage, DashboardMenuItem } from './nav/navitems';
 
 class MainNavbar extends React.Component {
   constructor(props) {
@@ -43,11 +41,7 @@ class MainNavbar extends React.Component {
       const props = this.props;
       switch(navDescription.name){
         case 'DASHBOARD':
-          return (
-            <NavItem key={index} active={navDescription.isActive}>
-              <NavLink href="/dashboard/"><i className="fa fa-line-chart" aria-hidden="true"></i>Dashboard</NavLink>
-            </NavItem>
-          );
+          return <DashboardMenuItem key={index} {...navDescription} />
         case 'ACCOUNT':
           return (
             <UncontrolledDropdown nav inNavbar key={index}>

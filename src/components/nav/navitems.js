@@ -1,6 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {
+  NavItem,
+  NavLink } from 'reactstrap';
 
+//Profile image component
 const MainProfileImage = (props) => {
   if(props.user.signedIn){
     return (
@@ -19,3 +23,12 @@ const mapStateToProfileImageProps = (state) => {
 }
 
 export const AppProfileImage = connect(mapStateToProfileImageProps)(MainProfileImage);
+
+
+export const DashboardMenuItem = (props) => {
+  return (
+    <NavItem active={props.isActive}>
+      <NavLink href="/dashboard/"><i className="fa fa-line-chart" aria-hidden="true"></i>Dashboard</NavLink>
+    </NavItem>
+  );
+}
