@@ -8,7 +8,7 @@ import AuthPage from './Auth';
 class PageMainContent extends React.Component {
   render(){
     return (
-      <div>
+      <div className="container-fluid page-content">
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
           <Route path="/dashboard" component={DashboardPage}></Route>
