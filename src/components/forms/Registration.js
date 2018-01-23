@@ -3,7 +3,7 @@ import React from 'react';
 const RegistrationForm = (props) => {
   return (
     <div class="row justify-content-center">
-      <div>
+      <div class="xs-whole-page">
         <div class="form-style">
             <h2>Register an Account</h2>
             <form>

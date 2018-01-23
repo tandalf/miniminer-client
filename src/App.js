@@ -6,9 +6,15 @@ import PageMainContent from './components/pages/PageContent';
 class App extends Component {
   render() {
     return (
-      <div>
-        <AppNavbar />
-        <PageMainContent />
+      <div className="page">
+        <header>
+          <AppNavbar />
+        </header>
+        <main className="container-fluid">
+          <PageMainContent />
+        </main>
+        <footer>
+        </footer>
       </div>
     );
   }
