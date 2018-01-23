@@ -11,7 +11,8 @@ html, body {
 }
 
 .navbar {
-  background-color: #86c2cc;
+  background-color: #3aaf78;
+  border-bottom: 1px solid #096339;
 }
 
 .navbar i.fa {
@@ -37,7 +38,7 @@ html, body {
 
 }
 .form-style h2{
-    background: #86c2cc;
+    background: #3aaf78;
     text-transform: uppercase;
     font-family: 'Overpass Mono', sans-serif;
     color: #797979;
@@ -81,7 +82,7 @@ html, body {
     -moz-box-shadow: inset 0px 1px 0px 0px #99cdd6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #99cdd6;
     box-shadow: inset 0px 1px 0px 0px #99cdd6;
-    background-color: #86c2cc;
+    background-color: #3aaf78;
     border: 1px solid #59b8c7;
     display: inline-block;
     cursor: pointer;
@@ -137,5 +138,6 @@ footer {
 @media (max-width: 575px) {
   .form-style {
     margin: auto;
+    margin-top: 1px;
   }
 }
