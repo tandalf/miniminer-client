@@ -25,6 +25,16 @@ html, body {
   margin-right: 5px;
 }
 
+/*********************************Typography***********************************/
+.color-typo {
+  color: #359668;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link,
+.light-typo {
+  color: #e5ece9;
+}
+
 /***********************************Forms**************************************/
 .form-style{
     font-family: 'Overpass Mono', sans-serif;
@@ -38,10 +48,9 @@ html, body {
 
 }
 .form-style h2{
-    background: #3aaf78;
+    background: #e5ece9;
     text-transform: uppercase;
     font-family: 'Overpass Mono', sans-serif;
-    color: #797979;
     font-size: 18px;
     font-weight: 100;
     padding: 20px;
