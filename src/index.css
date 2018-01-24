@@ -51,10 +51,10 @@ html, body {
     background: #e5ece9;
     text-transform: uppercase;
     font-family: 'Overpass Mono', sans-serif;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 600;
     padding: 20px;
-    margin: -30px -30px 30px -30px;
+    margin: -30px -30px 10px -30px;
 }
 .form-style input[type="text"],
 .form-style input[type="date"],
@@ -79,7 +79,7 @@ html, body {
     border-bottom: 1px solid #ddd;
     background: transparent;
     margin-bottom: 10px;
-    font: 16px 'Overpass Mono', sans-serif;
+    font: 14px 'Overpass Mono', sans-serif;
     height: 45px;
 }
 .form-style textarea{
