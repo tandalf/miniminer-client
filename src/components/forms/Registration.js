@@ -3,8 +3,7 @@ import React from 'react';
 const RegistrationForm = (props) => {
   return (
     <div class="row justify-content-center main-row">
-      <div class="xs-whole-page">
-        <div class="form-style">
+        <div class="form-style xs-whole-page">
             <h2 className="color-typo text-center">Register an Account</h2>
             <form>
               <input type="text" name="first_name" placeholder="First Name" />
@@ -16,7 +15,6 @@ const RegistrationForm = (props) => {
             </form>
           </div>
         </div>
-      </div>
 
   );
 }
