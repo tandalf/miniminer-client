@@ -38,7 +38,7 @@ html, body {
 /***********************************Forms**************************************/
 .form-style{
     font-family: 'Overpass Mono', sans-serif;
-    max-width: 500px;
+    max-width: 570px;
     padding: 30px;
     background: #FFFFFF;
     margin: 50px auto;
@@ -124,6 +124,11 @@ html, body {
 }
 main {
     flex: 1;
+    height: 100%;
+    display: flex;  /*use a flex display so that we can stretch vertically to fill empty space so that
+    inner elements can have 100% heights*/
+    flex-direction: row;
+    align-items: stretch;
     /* margin-top: 56px; */
 }
 footer {
@@ -135,11 +140,13 @@ footer {
 }
 .page-content>.row {
 }
- /* .footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
- } */
+
+.main-row {
+  flex: 1 1 0%;
+  align-items: stretch; /*strech this item's height to reach 100% of container's
+  height*/
+}
+
 .navbar-container {
   width: 100%;
 }
@@ -148,5 +155,9 @@ footer {
   .form-style {
     margin: auto;
     margin-top: 1px;
+  }
+
+  .xs-whole-page .form-style {
+    height: 100%; 
   }
 }

@@ -2,10 +2,10 @@ import React from 'react';
 
 const RegistrationForm = (props) => {
   return (
-    <div class="row justify-content-center">
+    <div class="row justify-content-center main-row">
       <div class="xs-whole-page">
         <div class="form-style">
-            <h2 className="color-typo">Register an Account</h2>
+            <h2 className="color-typo text-center">Register an Account</h2>
             <form>
               <input type="text" name="first_name" placeholder="First Name" />
               <input type="text" name="last_name" placeholder="Last Name" />
