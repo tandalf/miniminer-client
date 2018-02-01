@@ -156,6 +156,13 @@ footer {
   width: 100%;
 }
 
+/******************************** Hacks ***************************************/
+/* Last dropdown menu overflows without this */
+.dropdown-menu {
+  right: 0px;
+  left: auto;
+}
+
 @media (max-width: 575px) {
 
   .xs-whole-page {
