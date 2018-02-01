@@ -6,11 +6,12 @@ import { DropdownItem } from 'reactstrap';
 
 import { AccountMenuItem } from './navitems';
 
-const middlewares = []
-const mockStore = configureStore(middlewares)
+let middlewares = []
+let mockStore = configureStore(middlewares)
 
 describe('<AccountMenuItem />', () => {
   const signedInUser = {signedIn: true};
+  const signedOutUser = {signedIn: false};
   it('should contain sign out submenu item if user is signed in', () => {
     const initialState = {
       user: signedInUser
@@ -31,5 +32,16 @@ describe('<AccountMenuItem />', () => {
     const editAccountSubMenuItem = <DropdownItem>Edit Account</DropdownItem>;
 
     expect(accountMenuItem.containsMatchingElement(editAccountSubMenuItem)).toEqual(true);
+  });
+
+  it("should contain a 'Sign In' submenu item if the user is signed out", () => {
+    const initialState = {
+      user: signedOutUser
+    };
+    const store = mockStore(initialState);
+    const accountMenuItem = mount((<Provider store={store}><AccountMenuItem user={signedOutUser} /></Provider>));
+    const signInSubMenuItem = <DropdownItem>Sign In</DropdownItem>;
+
+    expect(accountMenuItem.containsMatchingElement(signInSubMenuItem)).toEqual(true);
   });
 });
