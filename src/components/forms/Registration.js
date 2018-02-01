@@ -11,7 +11,7 @@ const RegistrationForm = (props) => {
               <input type="email" name="email" placeholder="Email" />
               <input type="password" name="password" placeholder="Password" />
               <input type="password" name="password_confirm" placeholder="Password Confirm" />
-              <input type="button" value="Register" />
+              <input type="button" className="btn btn-lg btn-default btn-block round" value="Register" />
             </form>
           </div>
         </div>

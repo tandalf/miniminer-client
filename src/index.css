@@ -35,6 +35,15 @@ html, body {
   color: #e5ece9;
 }
 
+/********************************** Buttons ***********************************/
+.btn-default {
+  background-color: #609cc3;
+  border: 1px solid #609cc3;
+}
+
+.btn-lg.round {
+  border-radius: 24px;
+}
 /***********************************Forms**************************************/
 .form-style{
     font-family: 'Overpass Mono', sans-serif;
@@ -92,8 +101,6 @@ html, body {
     /* -moz-box-shadow: inset 0px 1px 0px 0px #99cdd6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #99cdd6;
     box-shadow: inset 0px 1px 0px 0px #99cdd6; */
-    background-color: #609cc3;
-    border: 1px solid #609cc3;
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
