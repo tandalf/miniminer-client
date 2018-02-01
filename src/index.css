@@ -11,8 +11,8 @@ html, body {
 }
 
 .navbar {
-  background-color: #3aaf78;
-  border-bottom: 1px solid #096339;
+  background-color: #4d616c;
+  border-bottom: 1px solid #192931;
 }
 
 .navbar i.fa {
@@ -27,7 +27,7 @@ html, body {
 
 /*********************************Typography***********************************/
 .color-typo {
-  color: #359668;
+  color: #609cc3;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link,
@@ -49,7 +49,7 @@ html, body {
 
 }
 .form-style h2{
-    background: #e5ece9;
+    background: #e1e8ee;
     text-transform: uppercase;
     font-family: 'Overpass Mono', sans-serif;
     font-size: 14px;
@@ -89,11 +89,11 @@ html, body {
 }
 .form-style input[type="button"],
 .form-style input[type="submit"]{
-    -moz-box-shadow: inset 0px 1px 0px 0px #99cdd6;
+    /* -moz-box-shadow: inset 0px 1px 0px 0px #99cdd6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #99cdd6;
-    box-shadow: inset 0px 1px 0px 0px #99cdd6;
-    background-color: #3aaf78;
-    border: 1px solid #59b8c7;
+    box-shadow: inset 0px 1px 0px 0px #99cdd6; */
+    background-color: #609cc3;
+    border: 1px solid #609cc3;
     display: inline-block;
     cursor: pointer;
     color: #FFFFFF;
@@ -117,7 +117,7 @@ html, body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #e5ece9;
+  background-color: #e1e8ee;
   /* margin: 0px -15px; */
 }
 main {
@@ -131,7 +131,7 @@ main {
 }
 footer {
     min-height: 100px;
-    background-color: #4e6c71;
+    background-color: #4d616c;
 }
 .page-content {
   background-color: #f7f7f7;
