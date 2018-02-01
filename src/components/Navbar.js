@@ -41,7 +41,7 @@ class MainNavbar extends React.Component {
   }
   render() {
     return (
-      <div class="navbar-container">
+      <div className="navbar-container">
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/">Miniminer</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
