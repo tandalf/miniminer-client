@@ -44,4 +44,15 @@ describe('<AccountMenuItem />', () => {
 
     expect(accountMenuItem.containsMatchingElement(signInSubMenuItem)).toEqual(true);
   });
+
+  it("should contain a 'Register Account' submenu item if the user is signed out", () => {
+    const initialState = {
+      user: signedOutUser
+    };
+    const store = mockStore(initialState);
+    const accountMenuItem = mount((<Provider store={store}><AccountMenuItem user={signedOutUser} /></Provider>));
+    const registerAccountSubMenuItem = <DropdownItem>Register Account</DropdownItem>;
+
+    expect(accountMenuItem.containsMatchingElement(registerAccountSubMenuItem)).toEqual(true);
+  });
 });
