@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import thunkMiddleware from 'redux-thunk';
+import thunk from 'redux-thunk';
 import { createBrowserHistory } from 'history';
 
 import AppReducer from './reducers/index';
@@ -20,7 +20,7 @@ const defaultState = {
   }
 };
 
-const store = createStore(AppReducer, defaultState, applyMiddleware(thunkMiddleware));
+const store = createStore(AppReducer, defaultState, applyMiddleware(thunk));
 
 export const history = syncHistoryWithStore(createBrowserHistory(), store);
 export default store;
